@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><label for=""><h1>Phim Hoạt Hình</h1></label></header>
+    <div class="headerlink">
+        <lable>
+            <h4 class="itemLink"><a href="">Phim hoạt hình</a></h4>
+        </lable>
+        <lable>
+            <h4 class="itemLink"><a href="">Phim hoạt hình yêu thích</a></h4>
+        </lable>
+        <lable>
+            <h4 class="itemLink"><a href="">Nhân vật hoạt hình</a></h4>
+        </lable>
+        <lable>
+            <h4 ><a href="">Góp ý</a></h4>
+        </lable>
+    </div>
+
+    <div class="body">
+        <div class="contentLeft">
+            <video  src="" poster="https://i.ytimg.com/an_webp/zE7rhUXd1LM/mqdefault_6s.webp?du=3000&sqp=CL2F0KsG&rs=AOn4CLCYmj_-FfENQHioGUip9B5b5TyHfg"></video>
+            <figcaption><h2>Phim hòng kông</h2></figcaption>
+        </div>
+
+        <div class="contentRight">
+            <iframe width="932" height="524" src="https://www.youtube.com/embed/vxiVKzsasH8" title="LEO RANK MÙA 13.24 CHỈ VỚI YASUO 1 TIỀN SIÊU CARRY | Đấu trường chân lý mùa 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer><h2>Bản quyền củ tôi</h2></footer>
+    <script>
+        var vd = document.querySelector('.contentRight')
+        document.querySelector('video').onclick = function(e) {
+            vd.innerHTML = `<iframe width="932" height="524" src="https://www.youtube.com/embed/zE7rhUXd1LM" title="Nhà tù dành cho những thành phần nguy hiểm - Review phim Hàn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        }
+    </script>
+</body>
+</html>
