@@ -49,4 +49,5 @@ footer h2 {
 }
 video {
     cursor: pointer;
+    width: 100%;
 }
