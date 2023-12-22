@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="abc1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/testSQL/out/production/testSQL/abc/mysql-connector-java-8.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/testSQL/out/production/testSQL/abc/protobuf-java-3.19.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
