@@ -9,13 +9,16 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO implements IUserDAO {
-    private String jdbcURL = "jdbc:mysql://localhost:3306/demo?useSSL=false";
+    private String jdbcURL = "jdbc:mysql://localhost:3306/demo";
     private String jdbcUsername = "root";
     private String jdbcPassword = "01666553995";
+
+
 
     private static final String INSERT_USERS_SQL = "INSERT INTO users (name, email, country) VALUES (?, ?, ?);";
     private static final String SELECT_USER_BY_ID = "select id,name,email,country from users where id =?";
@@ -29,7 +32,7 @@ public class UserDAO implements IUserDAO {
     protected Connection getConnection() {
         Connection connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -47,9 +50,12 @@ public class UserDAO implements IUserDAO {
             preparedStatement.setString(3, user.getCountry());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
+            Statement st = connection.createStatement();
+            st.execute("call ten_procedure()");
         } catch (SQLException e) {
             printSQLException(e);
         }
+
     }
 
     public User selectUser(int id) {
@@ -81,6 +87,7 @@ public class UserDAO implements IUserDAO {
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
 
+
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
@@ -88,6 +95,7 @@ public class UserDAO implements IUserDAO {
                 String country = rs.getString("country");
                 users.add(new User(id, name, email, country));
             }
+            rs.close();
         } catch (SQLException e) {
             printSQLException(e);
         }

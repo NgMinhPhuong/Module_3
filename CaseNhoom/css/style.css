@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(-180deg, #F53D2D, #f63);
+    font-size: 90%;
+    position: fixed;
+    
+}
+a {
+    text-decoration:  none;
+    color: white;
+}
+.header_row1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header_row1_1, .header_row1_2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.header_row1_item {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 5px
+
+}
+
+
+.header_row1_item5, .header_row1_item6, .header_row1_item7 a {
+    display: flex;
+    border: none;
+}
+
+.header_row1_item5 > img, .header_row1_item6 > img, .header_row1_item7 > img {
+    height: 40%;
+}
+
+.header_row2 {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+   
+    
+   
+}
+.header_row2_1{
+    flex: 10%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.header_row2_2{
+    flex: 50%;
+    position: relative;
+    background-color: bisque;
+}
+
+.header_row2_3 {
+    flex: 20%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_row2_3 img {
+    scale: 2;
+}
+
+.header_row2_1 img {
+    width: 80%;
+    
+    
+}
+.header_row2_2 > input {
+    margin-top: 20px;
+    width: 100%;
+    height: 55%;
+  
+}
+
+
+.header_row3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main_left {
+    background-color: gray;
+    flex: 1;
+}
+
+.main_center {
+    background-color: red;
+    flex: 8;
+}
+
+.main_right {
+    background-color: green;
+    flex: 1;
+}
+
+
+.header_row1_item7 {
+    width: auto;
+    height: 50px;
+}
+div > ul {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    visibility: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.header_row2_2 > img {
+    background: #f63;
+    position: absolute;
+    right: 1%;
+    top: 24%;
+}

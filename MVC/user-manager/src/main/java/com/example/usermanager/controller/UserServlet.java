@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
@@ -45,6 +46,9 @@ import java.util.List;
 
         protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
+            System.out.println("here");
+            HttpSession session = request.getSession();
+            session.invalidate();
             String action = request.getParameter("action");
             if (action == null) {
                 action = "";
@@ -107,6 +111,7 @@ import java.util.List;
 
         private void updateUser(HttpServletRequest request, HttpServletResponse response)
                 throws SQLException, IOException, ServletException {
+            System.out.println("edit");
             int id = Integer.parseInt(request.getParameter("id"));
             String name = request.getParameter("name");
             String email = request.getParameter("email");
@@ -128,5 +133,8 @@ import java.util.List;
             RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
             dispatcher.forward(request, response);
         }
-    }
+
+
+
+}
 

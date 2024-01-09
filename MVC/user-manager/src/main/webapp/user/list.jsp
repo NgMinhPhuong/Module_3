@@ -22,6 +22,7 @@
             <th>Country</th>
             <th>Actions</th>
         </tr>
+
         <c:forEach var="user" items="${listUser}">
             <tr>
                 <td><c:out value="${user.id}"/></td>
