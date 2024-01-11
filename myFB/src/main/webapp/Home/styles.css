@@ -1,0 +1,85 @@
+body {
+    background-color: #f0f2f5;
+}
+.header {
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header .center {
+    margin-left: 150px;
+}
+
+.header .right {
+    margin-left: 220px;
+}
+
+.left>img {
+    width: 40px;
+}
+
+
+/* .left, .right{
+    background-color: red;
+} */
+
+.left>input, .left>img {
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+}
+.main .left>.navbar-default ul.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.main > .left1 {
+    width: 20%;
+}
+
+.main > .center {
+    flex: 60%;
+    
+    background-color: green;
+}
+
+.main > .right {
+    flex: 20%;
+    background-color: yellow;
+}
+
+.main .left ul {
+    width: 200px;
+}
+
+
+.main .left .container-fluid {
+    background-color: #f0f2f5;
+}
+
+.header .right li > .dropdown > button {
+    margin-top: 5px;
+}
+
+.header .right .dropdown .logout {
+    margin-left: -80px;
+}
+
+.header ,.main .left {
+    position: fixed;
+}
+
+.main .center, .main .right {
+    margin-top: 100px;
+}
+
+.main .left {
+    margin-top: 100px;
+}
+
+
+
+
