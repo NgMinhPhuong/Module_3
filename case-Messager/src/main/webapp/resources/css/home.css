@@ -1,0 +1,110 @@
+a {
+    text-decoration: none;
+}
+
+.header1 img{
+    width: 180px;
+    height: 140px;
+    border-radius: 20px;
+}
+.header1 h1{
+    font-size: 300%;
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header2>input {
+    width: 30%;
+    height: 40px;
+    border-radius: 100rem;
+    font-size: 30px;
+    position: relative;
+    left: 35%;
+}
+
+
+
+.header2{
+    width: 100%;
+    height: 40px;
+    background-color: greenyellow;
+
+
+}
+
+.header1-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.header1-3>a{
+    font-size: 150%;
+}
+/*---------------------------------------------------*/
+.main{
+    margin-top: 30px;
+
+    background-color: red;
+}
+.main .line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .line .line1>img{
+    width: 90px;
+    border-radius: 100rem;
+}
+
+.main .line .line1{
+    display: flex;
+
+}
+.main .line .line3>img{
+    width: 40px;
+
+}
+
+.li + .li{
+    margin-top: 20px;
+    background-color: red;
+}
+
+.line:hover{
+    background-color: darkgray;
+}
+
+/*resultSearch-----------------------------------------------*/
+.resultSearch{
+    background-color: navajowhite;
+    position: relative;
+    left: 35%;
+    overflow: auto;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultSearch>a>.line>.line1:hover{
+    background-color: darkgray;
+}
+
+
+.resultSearch>a>.line>.line1{
+    display: flex;
+    padding: 2px;
+    border: 1px black solid;
+}
+.resultSearch img {
+    width: 50px;
+    border-radius: 100rem;
+}
+
+.resultSearch>a {
+    width: 100%;
+
+}

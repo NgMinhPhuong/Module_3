@@ -1,0 +1,118 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 img {
+    width: 50%;
+}
+
+h1 {
+    font-size: 400%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.login input[name=username] {
+    width: 300px;
+    height: 30px;
+    border-radius: 100rem;
+}
+
+.login input[name=password] {
+    width: 300px;
+    height: 30px;
+    border-radius: 100rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 110%;
+    height: 300px;
+    position: relative;
+}
+
+.login input[type=submit] {
+    width: 300px;
+    height: 35px;
+    background-color: #1877f2;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.create {
+    width: 300px;
+    height: 35px;
+    background-color: #42b72a;
+    border-radius: 10px;
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.create:hover {
+    background-color: #399d25;
+}
+
+.forget:hover {
+    text-decoration: underline;
+}
+
+form img {
+    width: 6%;
+    position: absolute;
+    top: 27%;
+    right: 9%;
+}
+/*register----------------------------------------*/
+.register{
+    width: 30%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.register2{
+    display: flex;
+    flex-direction: column;
+}
+
+.register1>div{
+    margin-top: 8px;
+}
+
+.register2>input{
+    margin-top: 5px;
+}
+.register2>button {
+    position: relative;
+    left: -50px;
+    top: 10px;
+    border: 2px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+}

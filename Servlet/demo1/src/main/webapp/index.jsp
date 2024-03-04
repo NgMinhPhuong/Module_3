@@ -189,29 +189,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>fmt:parseDate example</title>
+    <title>Index</title>
 </head>
 <body>
-<h2>fmt:parseDate example hay á</h2>
-
-<!-- Một chuỗi có định dạng ngày tháng thời gian -->
-<c:set var="dateTimeString" value="17-11-2015 11:49" />
-<h4>
-    dateTimeString:
-    <c:out value="${dateTimeString}"/>
-</h4>
-<!-- Phân tích chuỗi mô tả ngày tháng thời gian lưu vào biến kiểu java.util.Date -->
-
-<fmt:parseDate value="${dateTimeString}"
-               type="both" var="parsedDatetime" pattern="dd-MM-yyyy HH:mm" />
-<p>
-    The date time after parsing:
-    <c:out value="${parsedDatetime}" />
-</p>
-<br/>
-<p>
-    Date only (dd/MM/yyyy):
-    <fmt:formatDate value="${parsedDatetime}" pattern="dd/MM/yyyy"/>
+<c:if test="${6 > 5}">
+    <h1>abc</h1>
+</c:if>
+    <a href="hello.jsp">Click me</a>
 </body>
 
 </html>
